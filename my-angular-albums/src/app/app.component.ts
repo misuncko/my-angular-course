@@ -17,8 +17,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.numbers = [1, 2, 3];
-
-
     const interval = setInterval(() => {
       this.titleCounter++;
       this.numbers.push(4);
