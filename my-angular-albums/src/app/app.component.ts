@@ -13,10 +13,19 @@ export class AppComponent implements OnInit {
   title = 'my-angular-albums';
   albumsArray: Album[];
   titleCounter: number = 1;
+  numbers: number[];
 
   ngOnInit(): void {
+    this.numbers = [1, 2, 3];
 
-    const interval = setInterval(() => this.titleCounter++, 2000);
+
+    const interval = setInterval(() => {
+      this.titleCounter++;
+      this.numbers.push(4);
+      console.log(this.numbers);
+      this.numbers = [...this.numbers];
+      this.albumsArray[0].price += 10;
+    }, 2000);
     setTimeout(() => clearInterval(interval), 6000);
     this.albumsArray = [
       {
