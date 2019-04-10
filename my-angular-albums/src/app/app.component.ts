@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   title = 'my-angular-albums';
   albumsArray: Album[];
-  titleCounter: number = 1;
+  titleCounter = 1;
   numbers: number[];
 
   ngOnInit(): void {
