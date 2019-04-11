@@ -15,6 +15,9 @@ export class AppComponent implements OnInit {
   titleCounter = 1;
   numbers: number[];
 
+
+
   ngOnInit(): void {
+
   }
 }
